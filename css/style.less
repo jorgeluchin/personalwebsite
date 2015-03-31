@@ -7,10 +7,14 @@
 h1 {
   font-size: 72px;
   text-align: center;
+  font-family: "abril", Georgia, serif;
+  margin: .5em 0;
 }
 
 h2 {
   text-align: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 .container-fluid {
@@ -20,6 +24,9 @@ h2 {
 .status {
   font-size: 0.8em;
   color: @gray-light;
+  background: #f9f9f9;
+  padding: 3px 7px;
+  border-radius: 20px;
   &:before {
     content: "";
     width: 10px;
@@ -34,9 +41,14 @@ h2 {
 
 .page-intro {
   text-align: center;
+  margin-bottom: 40px;
+  img {
+    border-radius: 50%;
+    vertical-align: bottom;
+  }
 }
 .page-content {
-  max-width: 600px;
+  max-width: 540px;
   margin: 0 auto;
 }
 
@@ -47,8 +59,58 @@ h2 {
 
 .btn {
   border: none;
-  border-radius: 0;
+  border-radius: 3px;
 }
 .btn-lg {
-  border-radius: 0;
+  border-radius: 3px;
+}
+ol, ul, p, blockquote {
+  margin-bottom: 1.5em;
+}
+ol, ul {
+  li {
+    margin-bottom: 1em;
+  }
+}
+
+.cta {
+  margin-bottom: 30px;
+  .btn {
+    margin-bottom: 20px;
+  }
+}
+
+blockquote {
+  margin-left: 0;
+  padding: 0;
+  border: none;
+  p {
+    font-style: italic;
+    margin-bottom: 10px;
+    small {
+      font-style: normal;
+    }
+  }
+}
+
+.list-plus {
+  i {
+    padding-right: 10px;
+    color: @gray-lighter;
+  }
+}
+
+.box {
+  background: #f9f9f9;
+  padding: 20px;
+  margin: 0 -30px;
+  // border-radius: 10px;
+  border-bottom: darken(#f9f9f9, 10%) solid 1px;
+  margin-bottom: 30px;
+  h2 {
+    margin-top: 0;
+  }
+  .cta {
+    margin-bottom: 0;
+  }
 }
