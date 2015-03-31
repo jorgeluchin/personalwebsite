@@ -1,5 +1,9 @@
 @import "_bootstrap.less";
 
+body {
+  overflow-x: hidden;
+}
+
 .wrap {
   padding: 20px 0;
 }
@@ -9,6 +13,14 @@ h1 {
   text-align: center;
   font-family: "abril", Georgia, serif;
   margin: .5em 0;
+  a {
+    color: @headings-color;
+    text-decoration: none;
+    &:hover {
+      color: @headings-color;
+      text-decoration: none;
+    }
+  }
 }
 
 h2 {
@@ -45,11 +57,14 @@ h2 {
   img {
     border-radius: 50%;
     vertical-align: bottom;
+    max-width: 300px;
   }
 }
 .page-content {
-  max-width: 540px;
   margin: 0 auto;
+  @media (min-width: 540px) {
+    max-width: 540px;
+  }
 }
 
 .text-center {
@@ -84,6 +99,15 @@ blockquote {
   margin-left: 0;
   padding: 0;
   border: none;
+  position: relative;
+  &:before {
+    content: '\201C';
+    position: absolute;
+    top: 0;
+    left: -.8em;
+    font-size: 3em;
+    color: lighten(#ccc, 10%);
+  }
   p {
     font-style: italic;
     margin-bottom: 10px;
@@ -97,6 +121,13 @@ blockquote {
   i {
     padding-right: 10px;
     color: @gray-lighter;
+  }
+}
+.list-cozy {
+  width: 230px;
+  margin: 0 auto;
+  li {
+    margin-bottom: 0;
   }
 }
 
@@ -113,4 +144,10 @@ blockquote {
   .cta {
     margin-bottom: 0;
   }
+}
+
+.header-available {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
