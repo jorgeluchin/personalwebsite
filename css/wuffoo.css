@@ -1,0 +1,28 @@
+.btTxt {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #fff;
+  padding: 10px 16px !important;
+  font-size: 23px !important;
+  line-height: 1.3333333;
+  border: none;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  font-family: Georgia,"Times New Roman",Times,serif;
+
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
