@@ -3,9 +3,10 @@ html(lang="en")
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    title Freelance developer, designer &amp; illustrator based in Canada | Jorge Pedret
+    title Express Website | Get a good looking Website in 2 days
 
     link(rel="stylesheet" type="text/css" href="/css/style.css")
+    link(rel="stylesheet" type="text/css" href="/css/express.css")
 
     //if lt IE 9
       script(src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js")
@@ -14,15 +15,13 @@ html(lang="en")
     .wrap
       .container-fluid
         .header-available
-          a.status.status-available(href="/contact") Available for contracts
+          a.status.status-available(href="./contact") Accepting new clients
         header.page-intro
           h1
-            a(href="/") Jorge Pedret
+            a(href="/express-website") Express Website
           if current.source == "index"
-            p.lead Freelance <strong>inventor, designer, illustrator &amp; coder</strong> based in Vancouver, Canada. I’m passionate for everything that I do and for creating a better place for everyone and for future generations.
-          if current.source == "index"
-            a(href="/oracle"): img(src="img/avatar.jpeg")
+            p.lead Great looking websites for <strong>individuals</strong> and <strong>small businesses</strong>.<br /> Get a published website for $500 in two days.
         
         article.page-content
           != yield
-        include _footer
+        include ../_footer
