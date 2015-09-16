@@ -1,3 +1,9 @@
+@bsp: "../_node_modules/bootstrap/less/";
+@import "@{bsp}variables.less";
+@import "_variables.less";
+@import "@{bsp}mixins.less";
+@import "@{bsp}panels.less";
+
 .express-body {
   h2 {
     font-size: 72px;
@@ -13,4 +19,13 @@
 
 p.process-intro {
   font-size: 20px;
+}
+
+.includes {
+  background: @gray-lighter;
+  padding: 2em;
+  font-size: 14px;
+  li i {
+    color: @brand-success;
+  }
 }
